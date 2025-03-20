@@ -5,6 +5,7 @@ use crate::collection::vectors::vectors;
 use crate::collection::hashmaps::hashmaps;
 use crate::collection::strings::strings;
 use crate::exercises::medianmode;
+use crate::exercises::piglatin;
 
 fn main() {
     vectors();
@@ -13,4 +14,5 @@ fn main() {
 
     medianmode::median();
     medianmode::mode();
+    piglatin::piglatin();
 }

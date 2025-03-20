@@ -3,8 +3,6 @@ use std::collections::HashMap;
 pub fn median() {
     let v = [5, 3, 4, 1, 2];
 
-    println!("The given list of integers is: {v:?}");
-
     let mut median = Vec::new();
 
     for items in v {
@@ -12,6 +10,8 @@ pub fn median() {
     }
 
     median.sort();
+
+    println!("The given list of integers is: {median:?}");
 
     if median.len() % 2 == 0 {
         println!("The median of the given list of integers is: {}", median[(median.len() / 2) - 1]);
